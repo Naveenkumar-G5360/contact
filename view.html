@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts - Address Book</title>
+    <link rel="stylesheet" href="../css/design.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Address Book</div>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='add.html'">Add Contact</button>
+            <button onclick="location.href='view.html'">View Contacts</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>View Contacts</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search contacts...">
+        </div>
+        <div class="contacts-container" id="contactsContainer">
+            <!-- Contacts will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Address Book. Copyright 2024</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html> 

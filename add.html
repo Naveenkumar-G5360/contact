@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact - Address Book</title>
+    <link rel="stylesheet" href="../css/design.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Address Book</div>
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='add.html'">Add Contact</button>
+            <button onclick="location.href='view.html'">View Contacts</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Add New Contact</h1>
+        <form id="contactForm" onsubmit="return addContact(event)">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Address Book. Copyright 2024</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html> 
